@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@v5.0.0
+      - uses: SonarSource/sonarcloud-github-action@ffc3010689be73b8e5ae0c57ce35968afd7909e8
+
         with:
           projectKey: arhamtahir007_Tetris
           organization: arhamtahir007
