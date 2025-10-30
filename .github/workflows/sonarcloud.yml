@@ -1,0 +1,19 @@
+name: SonarCloud Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sonarcloud:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectKey: arhamtahir007_Tetris
+          organization: arhamtahir007
+          token: ${{ secrets.SONAR_TOKEN }}
