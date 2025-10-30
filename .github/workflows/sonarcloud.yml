@@ -10,9 +10,9 @@ jobs:
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@5.0.0
+      - uses: actions/checkout@v2
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarcloud-github-action@v5.0.0
         with:
           projectKey: arhamtahir007_Tetris
           organization: arhamtahir007
